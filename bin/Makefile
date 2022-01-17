@@ -1,8 +1,8 @@
 CC=icc
 
 CFLAGS=-I../cpp_src -W -Wall -O3 -march=native -fast -ansi-alias \
-			-fopenmp -finline -funroll-loops -no-prec-div -opt-prefetch -unroll-aggressive \
-			-m64 -auto-ilp32 -I../src -xCORE-AVX2 -fma -mkl -I/opt/local/include/
+			-fopenmp -finline -funroll-loops -no-prec-div -qopt-prefetch -unroll-aggressive \
+			-m64 -auto-ilp32 -I../src -fma -mkl -I/opt/local/include/
 
 LDFLAGS=-L/opt/local/lib -fopenmp -lboost_system-mt -lboost_timer-mt -mkl -lPcmMsr
 
